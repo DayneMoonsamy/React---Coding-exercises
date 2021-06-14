@@ -1,3 +1,8 @@
+# Ambrite:
+
+Once code is downloaded run 'npm start' from project directory.
+Browser should open directly.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
