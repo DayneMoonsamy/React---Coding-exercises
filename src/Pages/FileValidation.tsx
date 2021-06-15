@@ -89,7 +89,6 @@ function handleChange(e: any, {value}: any)
     : <p style={{color: "red"}}>Choose a file to begin validation</p>}
    </>
   )
-  
 }
 
 export default FileValidation

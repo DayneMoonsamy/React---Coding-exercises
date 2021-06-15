@@ -1,5 +1,4 @@
 import { lchmodSync } from 'fs';
-import { resourceLimits } from 'worker_threads';
 import data from '../files/p3Data.json'
 
 function Union() {
@@ -54,8 +53,6 @@ function Union() {
     
     return
     }
-
-
     return (
       <>
         {testUnion()}

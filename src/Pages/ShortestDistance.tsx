@@ -5,7 +5,6 @@ import { Button, Input, Table } from 'semantic-ui-react';
 
 function ShortestDistance() 
 {
-
   const [tableData, setTableData] = useState({});
   const [loading, setLoading] = useState(true);
   const [long, setLong] = useState(0);
