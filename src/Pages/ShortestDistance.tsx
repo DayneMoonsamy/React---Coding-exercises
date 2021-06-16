@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import file from '../files/geo.json'
 import data from '../files/data.json'
 import { Button, Input, Table } from 'semantic-ui-react';
+import '.././App.css'
 
 function ShortestDistance() 
 {
@@ -51,7 +52,10 @@ function ShortestDistance()
   }
 
   return(
+
     <div>
+    {loading ? (    
+    <>
       <div className="cont">
         <div className="center">
         <Input focus placeholder='Enter Longitude' onChange={handleL}/><br/><br/>
@@ -61,12 +65,14 @@ function ShortestDistance()
         </Button>
         </div>
       </div>
-      {loading ? (
-        <div>
-          
-        </div>
+    </>
       ) : ( 
-        <div className ="back">
+        <>
+      <div className="button1">
+      <Button onClick={() => setLoading(true)}>
+        Restart 
+      </Button></div>
+        <div className="back">
         <Table color={'black'} key={'black'}  textAlign="center" inverted>
         <Table.Header>
           <Table.Row>
@@ -80,8 +86,8 @@ function ShortestDistance()
         </Table.Header>
         <Table.Body>      
           {Object.values(tableData).map((product:any, i:number) => {
-             return (
-            <Table.Row>
+             return (             
+            <Table.Row  key={i}>
               <Table.Cell>
                 {product['active']}            
               </Table.Cell>
@@ -103,7 +109,9 @@ function ShortestDistance()
             </Table.Row>)
             })}
         </Table.Body>
-      </Table></div>
+      </Table>
+      </div>
+      </>
       )}      
     </div>
   )

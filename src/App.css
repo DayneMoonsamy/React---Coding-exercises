@@ -1,7 +1,7 @@
 .background {
   text-align: center;
   background-color: black;
-  min-height: 100vh;
+  min-height: 110vh;
 }
 
 .button1
@@ -9,29 +9,6 @@
 
   margin-top: 70px;
   margin-bottom: 50px;
-}
-
-.App-header {
-  background-color: #282c34;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .cont {
@@ -48,4 +25,14 @@
   transform: translate(-50%, -50%);
 }
 
+.back
+{
+  position: relative;
+  padding-top:60%;
+}
 
+.unionDown
+{
+  position: relative;
+  padding-top:80%;
+}
