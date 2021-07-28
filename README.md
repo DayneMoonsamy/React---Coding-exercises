@@ -1,4 +1,14 @@
-# Ambrite:
+# Task 1:
+
+Validity of JSON file
+
+# Task 2:
+
+Distance calculator between two co-ordinates
+
+# Task 3:
+
+Combine two JSON datasets 
 
 Once code is downloaded run 'npm start' from project directory.
 Browser should open directly.
